@@ -1,0 +1,238 @@
+/* Reset básico */
+
+:root {
+    --creme: #E7DED0;
+    --latte: #d0bca0; /*leite (esquecikk)*/
+    --biscotti: #DAC098;
+    --toffee: #9f825b;
+    --cocoa: #82614a; /*cacau*/
+    --natbrow: #775b3f; /*natural brown*/
+    --goldencaramel: #caa972;
+    --blond: #c8ae84;
+    --sunburst: #e0b77c; /*explosao solar?*/
+    --chocolate: #D2691E;
+    /*green*/
+    --verdungreen: #48521c;
+    --smoke: #999f54; /*fumaça verde?*/
+    --orinoco: #dbdaaf;
+    --eggshell: #fcfff5; /*casca de ovo*/
+    --lesbico: #647002;
+    --florest: #228B22;
+
+}
+/* Estilo do Menu */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar li {
+    position: relative; /* Necessário para o dropdown */
+}
+
+/* Estilo para o dropdown (lista de cartas) */
+.navbar .dropdown {
+    display: none; /* Inicialmente, o menu de cartas está oculto */
+    position: absolute; /* Coloca o menu abaixo do item "A Carta" */
+    top: 100%; /* Posiciona o menu logo abaixo do item */
+    left: 0;
+    background-color: var(--creme); /* Cor de fundo para o menu */
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+}
+
+.navbar .dropdown li {
+    padding: 8px 20px;
+}
+
+.navbar .dropdown li a {
+    color: var(--natbrow);
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    padding: 5px 0;
+}
+.navbar .dropdown li a:hover {
+    color: var(--toffee);
+}
+.navbar li:hover .dropdown { /*Mouse torna visivel*/
+    display: block;
+}
+.navbar li a:hover { /*troca a cor quando passa o mouse*/
+    color: var(--latte);
+}
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:  #ffffff;
+    color: #000000;
+}
+h1, h2 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Barra de navegação */
+.navbar {
+    background-color: white;
+    color: var(--biscotti);
+    padding: 10px 20px;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid black;
+    width: 85%;
+    margin: auto;
+}
+.navbar li a {
+    color: var(--natbrow);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar li a:hover {
+    color: var(--toffee);
+}
+
+/* Seções */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.section h1 {
+    color: rgb(38, 26, 26);
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.section p {           /*TEXTO COR*/
+    font-size: 1.1em;
+    color: #1b1b1b;
+}
+
+/* Adaptação para telas menores */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .section {
+        padding: 30px 10px;
+    }
+}
+h2{
+    padding: 0%;
+    margin: 0%;
+}
+.textos{
+    width: 20%;
+    height: 20%;
+    align-items: center;
+    order: -1;
+    flex-grow: 2;
+    
+}
+.inicio {
+    background-color: var(--latte);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 90px;
+    justify-content: space-around;
+    border-bottom: 1px solid #d4d4d4;
+    align-items: stretch;
+    column-gap: 30px;
+    
+}
+.imagem{
+    height: 550px;
+    width: 40%;
+    background-color: rgb(0, 0, 0);
+    border: 20px;
+    border-radius: 5px; 
+
+}
+
+.sinopse{
+    background-color: white;
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 50px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+#personagem1, #personagem2, #personagem3{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    background-color: var(--cocoa); /*background-image: url('teste2carta.jpg');*/
+    border-radius: 5px;
+    flex-wrap: wrap;
+    border: 5px solid #9f825b;
+    
+}
+.persotexto{
+    padding: 30px 30px;
+    font-family:  "Comic Sans MS", cursive;
+    color: black;
+}
+.linha-vertical {
+    border-left: 2px solid #6F4F37; 
+    height: 570px; 
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.caixa-texto {
+    margin-left: 790px;
+    height: 1px;
+    width: 40%;
+    background-color: var(--latte);
+    text-align: right;
+    font-size: 15px; 
+    color: var(--natbrow); 
+    border-radius: 5px; 
+}
+.boxpersonagens {
+    background-color: var(--latte);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 50px 90px;
+    justify-content: space-around;
+    border-bottom: 1px solid #d4d4d4;
+    align-items: stretch;
+    column-gap: 30px;   
+}
+.imgpersonagem {
+    width: 80%;
+    height: 250px;
+    background-color: var(--natbrow);
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.nomeperso {
+    text-align: center;
+    color: #000000;
+    margin-left: 110px;
+}
