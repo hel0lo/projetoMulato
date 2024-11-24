@@ -1,4 +1,3 @@
-/* Reset básico */
 
 :root {
     --creme: #E7DED0;
@@ -24,11 +23,9 @@
     --eggshell: #fcfff5; /*casca de ovo*/
     --lesbico: #647002;
     --florest: #228B22;
-
 }
-
 body{
-    background-image: url(./bd.jpeg);
+    background-image: url(./img/bd.jpeg);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -37,7 +34,6 @@ body{
     max-width: 80%;
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: var(--eggshell);
     box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.7);
@@ -45,7 +41,7 @@ body{
 .section {
     animation: fadeIn 1.5s ease-in-out;
 }
-@keyframes fadeIn {
+@keyframes fadeIn { /*esse de tela menor nãpo testado*/
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -58,7 +54,6 @@ body{
 html {
     scroll-behavior: smooth;
 }
-
 .navbar ul {
     display: flex;
     justify-content: center;
@@ -68,16 +63,14 @@ html {
 }
 
 .navbar li {
-    position: relative; /* Necessário para o dropdown */
+    position: relative;
 }
-
-/* Estilo para o dropdown (lista de cartas) */
 .navbar .dropdown {
     display: none; 
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--creme); /* Cor do menu */
+    background-color: var(--creme); /*cor do menu*/
     padding: 10px 0;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -98,7 +91,7 @@ html {
 .navbar .dropdown li a:hover {
     color: var(--toffee);
 }
-.navbar li:hover .dropdown { /*Mouse torna visivel*/
+.navbar li:hover .dropdown { 
     display: block;
 }
 .navbar li a:hover { /*troca a cor quando passa o mouse*/
@@ -121,7 +114,7 @@ h1, h2 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* Barra de navegação */
+/*Barra de navegação*/
 .navbar {
     background-color: white;
     color: var(--biscotti);
@@ -148,8 +141,6 @@ h1, h2 {
 .navbar li a:hover {
     color: var(--toffee);
 }
-
-/* Seções */
 .section {
     padding: 50px 20px;
     text-align: center;
@@ -168,7 +159,7 @@ h1, h2 {
     color: #1b1b1b;
 }
 
-/* Adaptação para telas menores */
+/* Adaptação para telas menores chat fez tbm nao sei nao */
 @media (max-width: 768px) {
     .navbar ul {
         flex-direction: column;
@@ -199,8 +190,7 @@ h2{
     justify-content: space-around;
     border-bottom: 1px solid #d4d4d4;
     align-items: stretch;
-    column-gap: 30px;
-    
+    column-gap: 30px;  
 }
 .imagem{
     height: 550px;
@@ -211,7 +201,6 @@ h2{
     margin-top: 50px;
     margin-bottom: 0px;
 }
-
 .sinopse{
     background-color: white;
     display: inline-block;
@@ -227,7 +216,7 @@ h2{
     width: 40%;
     display: flex;
     align-items: center;
-    background-color: var(--cocoa); /*background-image: url('teste2carta.jpg');*/
+    background-color: var(--toffee); /*background-image: url('teste2carta.jpg');*/
     border-radius: 5px;
     flex-wrap: wrap;
     border: 5px solid #9f825b;
@@ -236,7 +225,7 @@ h2{
 .persotexto{
     padding: 30px 30px;
     font-family:  "Comic Sans MS", cursive;
-    color: black;
+    color: rgb(2, 2, 2);
     
 }
 .linha-vertical {
@@ -249,7 +238,6 @@ h2{
 }
 .caixa-texto {
     margin-left: 600px;
-    
     width: 40%;
     background-color: var(--latte);
     text-align: right;
@@ -273,12 +261,10 @@ h2{
     height: 250px;
     background-color: var(--natbrow);
     border-radius: 5px;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 .nomeperso {
-    text-align: center;
-    color: #000000;
-    margin-left: 55px;
+    align-self: center;
 }
 .autor-container {
     display: flex;
@@ -289,10 +275,9 @@ h2{
     border-bottom: 1px solid #2e0f0f;
     border-top: 1px solid #2e0f0f;
 }
-
 .autor-texto {
     flex: 1;
-    text-align: justify; /* Texto justificado */
+    text-align: justify; /*Texto justificado*/
     font-size: 1.1em;
     line-height: 1.6;
     color: #2c3e50;
@@ -300,18 +285,18 @@ h2{
 }
 
 .autor-imagem {
-    flex: 0 0 250px; /* Define um tamanho fixo para a imagem */
-    max-height: 350px; /* Limite da altura */
-    overflow: hidden; /* Esconde qualquer conteúdo excedente */
+    flex: 0 0 250px;
+    max-height: 350px;
+   
 }
 
-.autor-imagem img {
+.autor-imagem img { /*chat fez provavelmente nao funcioana :D*/
     width: 100%;
     height: auto;
     border-radius: 20px; 
-    margin-top: 30px;
+    margin-top: 50px;
     border: 1px solid #ccc;
-    box-shadow: 0px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 768px) {
     .autor-container {
@@ -323,7 +308,6 @@ h2{
         text-align: justify;
         width: 100%;
     }
-
     .autor-imagem {
         width: 100%;
         max-width: 250px;
@@ -336,8 +320,8 @@ h2{
     margin: 30px auto; 
     max-width: 85%; 
     border-radius: 5px; 
-    opacity: 0.8; /* Degradê mais suave */
-    transition: opacity 0.3s ease; /* Animação para hover */
+    opacity: 0.8; /*degradê mais suave */
+    transition: opacity 0.3s ease; /*animação */
 }
 .linha-degrade:hover {
     opacity: 1;
@@ -356,4 +340,89 @@ h2{
 .linha-separadora:hover {
     opacity: 1;
     background: linear-gradient(to right, var(--blond), var(--goldencaramel), var(--natbrow), var(--toffee));
+}
+/* Sobre a Professora */
+.professora-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.professora-imagem img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    margin-left: 190px;
+    margin-right: 30px;
+}
+.professora-texto {
+    max-width: 600px;
+}
+.professora-texto p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.professora-redes {
+    margin-top: 10px;
+}
+.professora-redes a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    color: var(--bistre);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.professora-redes a:hover {
+    color: var(--toffee);
+}
+
+.professora-redes i {
+    margin-right: 5px;
+}
+
+/*alunos*/
+.box-alunos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.aluno {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.1); /*1 em baixo 2 lateral 3 opacidades*/
+}
+.img-aluno {
+    width: 90%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.nome-aluno {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.aluno-texto {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+.aluno:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra quando aumentaa */
 }
