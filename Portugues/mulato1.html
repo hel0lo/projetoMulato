@@ -10,12 +10,11 @@
 <meta http-equiv="refresh" content="4"> <!-- Recarrega a página a cada 4 segundos -->
 
 <body>
-    <!-- Barra de navegação -->
+    <div class="container">
     <nav class="navbar">
         <ul>
             <li><a href="#sinopse" onclick="scrollToSection('sinopse')">Sinopse</a></li>
             <li><a href="#personagens" onclick="scrollToSection('personagens')">Sobre os personagens</a></li>
-            <li>
                 <li>
                     <a href="#carta" onclick="scrollToSection('carta')">A Carta</a>
                     <ul class="dropdown">
@@ -47,11 +46,30 @@
                     <p>Esta é a legenda ou descrição da imagem.</p>
                 </div>
         </div>
+        <div class="linha-separadora"></div>
+        <section id="autor" class="section">
+            <h1>Sobre o Autor</h1>
+            <div class="autor-container">
+                <div class="autor-texto">
 
-    <section id="autor" class="section">
-        <h1>Sobre o Autor</h1>
-        <p>Detalhes sobre a biografia do autor, suas obras mais famosas e sua importância literária.</p>
-    </section>
+                    <p>
+                        Aluísio Azevedo (1857-1913) foi um dos maiores representantes do naturalismo na literatura brasileira. 
+                        Nascido em São Luís do Maranhão, destacou-se como escritor, jornalista, caricaturista e diplomata. 
+                        Sua obra mais famosa, "O Mulato" (1881), inaugurou o naturalismo no Brasil e provocou controvérsias ao abordar questões como 
+                        racismo, hipocrisia social e poder religioso.
+                    </p>
+                    <p>
+                        Além de "O Mulato", Aluísio escreveu outras obras marcantes, como "Casa de Pensão" e "O Cortiço", 
+                        nas quais explorou as dinâmicas sociais e as desigualdades do Rio de Janeiro do século XIX. 
+                        Ele também foi membro fundador da Academia Brasileira de Letras, ocupando a cadeira nº 4.
+                    </p>
+                </div>
+                <div class="autor-imagem">
+                    <img src="aluisio.jpeg" alt="Aluísio Azevedo">
+                </div>
+            </div>
+        </section>
+        <div class="linha-degrade"></div>
 
     </section>
     <section id="personagens" class="section">
@@ -76,7 +94,7 @@
                     A história se passa na cidade de São Luís, no Maranhão, e tem como protagonista Raimundo, um jovem advogado que retorna à cidade natal após ser criado e educado na Europa. Raimundo é filho de uma relação extraconjugal entre José Pedro, um rico comerciante branco, e uma escravizada negra. Contudo, sua origem mestiça foi mantida em segredo por influência do tio, o padre Diogo, que controlava a fortuna da família.
             </div>
     </section>
-
+    <div class="linha-separadora"></div>
     <section id="carta" class="section">
         <h1>Cartas</h1>
         <div id="carta1" class="inicio">
@@ -86,7 +104,6 @@
             </div>
         </div>
         <div class="inicio">
-
             <div id="carta2" class="carta2">
                 <h1>Carta 2</h1>
                 <p>Desenvolvimento da história...</p>
@@ -99,7 +116,7 @@
             </div>
         </div>
     </section>
-
+    <div class="linha-degrade"></div>
     <section id="professora" class="section">
         <h1>Sobre a Professora</h1>
         <p>Uma descrição breve sobre a professora responsável pelo trabalho e sua metodologia de ensino.</p>
@@ -109,7 +126,8 @@
         <h1>Alunos Envolvidos</h1>
         <p>Lista dos alunos que contribuíram para o desenvolvimento deste trabalho.</p>
     </section>
-
+    <div class="linha-separadora"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
