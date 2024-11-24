@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Mulato</title>
+    <title>Projeto Mulato</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img/icone.png">
+
 </head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="4"> <!-- Recarrega a página a cada 4 segundos -->
+<meta http-equiv="refresh" content="4"> <!--Recarrega a página a cada 4 segundos -->
 
 <body>
     <div class="container">
-    <nav class="navbar">
+    <nav class="navbar"> <!--NÃO esquecer do ID, ele que faz a pagina se direcionar onde eu cliquei.-->
         <ul>
             <li><a href="#sinopse" onclick="scrollToSection('sinopse')">Sinopse</a></li>
             <li><a href="#personagens" onclick="scrollToSection('personagens')">Sobre os personagens</a></li>
@@ -25,6 +27,7 @@
                 </li>
             <li><a href="#professora" onclick="scrollToSection('professora')">Sobre a Professora</a></li>
             <li><a href="#alunos" onclick="scrollToSection('alunos')">Alunos Envolvidos</a></li>
+            <li><a href="#sobre-colegio" onclick="scrollToSection('sobre-colegio')">UTFPR</a></li>
         </ul>
     </nav>
 
@@ -40,18 +43,20 @@
                 </div>
                 <div class="linha-vertical"></div>
             <div class="imagem" >
-                <img src="" alt="">
+                <img src="./img/capalivro.jpg" alt="">
             </div>
                 <div class="caixa-texto">
-                    <p>Esta é a legenda ou descrição da imagem.</p>
+                    <p class="texto-com-quebras">Editora Damel (20 janeiro 2021),
+                        Idioma Português</p>
                 </div>
         </div>
-        <div class="linha-separadora"></div>
+
+<div class="linha-separadora"></div>
+
         <section id="autor" class="section">
             <h1>Sobre o Autor</h1>
             <div class="autor-container">
                 <div class="autor-texto">
-
                     <p>
                         Aluísio Azevedo (1857-1913) foi um dos maiores representantes do naturalismo na literatura brasileira. 
                         Nascido em São Luís do Maranhão, destacou-se como escritor, jornalista, caricaturista e diplomata. 
@@ -92,38 +97,88 @@
                 <h1 class="nomeperso">Ana Rosa Pescada</h1>
                 <p class="persotexto" >
                     Idade: Aproximadamente 20 anos
-Família:
-Pai: Manuel Pescada, comerciante influente e conservador.
-Mãe: Dona Quitéria, uma mulher submissa às normas sociais da época.
-Descrição:
-Ana Rosa é uma jovem que vive dividida entre o amor por Raimundo e os valores racistas e religiosos impostos por sua família. Ela é meiga e sonhadora, mas sua falta de autonomia a torna vítima das circunstâncias. A gravidez e o aborto forçado revelam a crueldade das pessoas ao seu redor.
+                    Família:
+                    Pai: Manuel Pescada, comerciante influente e conservador.
+                    Mãe: Dona Quitéria, uma mulher submissa às normas sociais da época.
+                    Descrição:
+                    Ana Rosa é uma jovem que vive dividida entre o amor por Raimundo e os valores racistas e religiosos impostos por sua família. Ela é meiga e sonhadora, mas sua falta de autonomia a torna vítima das circunstâncias. A gravidez e o aborto forçado revelam a crueldade das pessoas ao seu redor.
                 </div>
             <div id="personagem3">
                 <img class="imgpersonagem" src="" alt="">
-                <h1 class="nomeperso">personagem 3</h1>
-                <p class="persotexto" >O Mulato (1881) é um marco do naturalismo na literatura brasileira, escrito por Aluísio Azevedo. A obra aborda temas como o preconceito racial, a hipocrisia social e o poder da Igreja em uma sociedade patriarcal e escravocrata do século XIX
-                    A história se passa na cidade de São Luís, no Maranhão, e tem como protagonista Raimundo, um jovem advogado que retorna à cidade natal após ser criado e educado na Europa. Raimundo é filho de uma relação extraconjugal entre José Pedro, um rico comerciante branco, e uma escravizada negra. Contudo, sua origem mestiça foi mantida em segredo por influência do tio, o padre Diogo, que controlava a fortuna da família.
-            </div>
+                <h1 class="nomeperso">Padre Diogo Pescada</h1>
+                <p class="persotexto">
+                    Idade: Cerca de 50 anos
+                    Família:
+                    Irmão: José Pedro (pai de Raimundo).
+                    Sobrinho: Raimundo da Silva Pescada.
+                    Descrição:
+                    Padre Diogo é uma figura autoritária e hipócrita, que usa sua posição religiosa para manipular os acontecimentos. Ele atua como guardião dos interesses da família e impede a relação de Raimundo e Ana Rosa, contribuindo para os conflitos e tragédias que permeiam a história. Sua postura conservadora é um reflexo do poder da Igreja na época.
+                    
+
+                </div>
     </section>
     <div class="linha-separadora"></div>
     <section id="carta" class="section">
         <h1>Cartas</h1>
         <div id="carta1" class="inicio">
             <div class="carta1">
-                <h1>Carta 1</h1>
-                <p>A história de O Mulato segue abordando...</p>
+                <h1>Carta de Raimundo para Ana Rosa</h1>
+                <div class="folhacarta">
+                    <p class="texto-com-quebras">São Luís, 15 de novembro de 1881
+
+                        Minha doce Ana Rosa,
+                    
+                        Escrevo com o coração transbordando de sentimentos que mal consigo organizar em palavras. Desde que nos reencontramos, sinto que minha vida ganhou um propósito maior. Em você, encontro um motivo para resistir às dores que carrego como homem mestiço em uma sociedade que tanto me despreza.
+                    
+                        Sei que nossa relação enfrenta desafios que nem sempre podemos controlar. Sei também que os preconceitos de sua família e da sociedade são como muros que nos cercam, mas, ainda assim, sonho com o dia em que possamos viver livres dessas amarras. Não desejo ser apenas uma lembrança em sua vida; quero ser aquele com quem você divide seus dias e seus sonhos.
+                    
+                        Por favor, nunca deixe que o medo ou a influência alheia apaguem o sentimento que temos um pelo outro. Nosso amor é puro, Ana Rosa, e isso é tudo o que realmente importa.
+                    
+                        Com todo o meu afeto,
+                        <strong>Raimundo</strong>
+                    </p>
+                </div>
             </div>
         </div>
         <div class="inicio">
             <div id="carta2" class="carta2">
-                <h1>Carta 2</h1>
-                <p>Desenvolvimento da história...</p>
+                <h1>Carta de Ana Rosa para Raimundo</h1>
+                <div class="folhacarta">
+                    <p class="texto-com-quebras">São Luís, 17 de novembro de 1881
+
+                        Meu querido Raimundo,
+                    
+                        Sei que, ao escrever estas palavras, corro o risco de expor meu coração mais do que deveria. Mas, meu querido, não posso evitar. Você é o pensamento que ilumina meus dias e o sonho que me conforta à noite.
+                    
+                        Vivo em constante conflito, dividida entre o amor que sinto por você e os medos que a vida me impõe. Minha mãe diz que devo pensar em minha honra, enquanto meu tio insiste que nossa relação é impossível. No entanto, nada disso apaga o que sinto.
+                    
+                        Sei que você carrega em si a dor de uma história injusta e cruel. E sei que, por isso, talvez minha luta nunca seja suficiente para compensar as barreiras que enfrentamos. Mesmo assim, quero que saiba que meu coração pertence a você, hoje e sempre.
+                    
+                        Com amor eterno,
+                        <strong>Ana Rosa </strong>
+                    </p>
+                </div>
             </div>
         </div>
         <div class="inicio">
             <div id="carta3" class="carta3">
-                <h1>Carta 3</h1>
-                <p>Conclusão e implicações sociais...</p>
+                <h1>Carta de Doutor Dias para Raimundo</h1>
+                <div class="folhacarta">
+                    <p class="texto-com-quebras">
+                        São Luís, 20 de novembro de 1881
+
+                        Caro Raimundo,
+                    
+                        Permita-me ser honesto: tenho acompanhado sua trajetória com admiração e preocupação. Admiração, porque vejo em você a força de quem não se dobra frente às injustiças do mundo. Preocupação, porque conheço bem os desafios que essa postura lhe trará, especialmente em uma sociedade que prefere calar vozes como a sua.
+                    
+                        Seu retorno a São Luís e sua aproximação de Ana Rosa mexeram com os alicerces desta cidade. Não é apenas o amor entre vocês que está em jogo, mas também a exposição de verdades que muitos gostariam de enterrar. O segredo sobre suas origens pesa sobre mim, e confesso que hesito entre revelar tudo ou proteger a estabilidade que tanto prezo.
+                    
+                        Quero que saiba, Raimundo, que estou ao seu lado, ainda que de forma sutil. A justiça que você busca não será fácil de alcançar, mas é necessária. Se precisar de minha ajuda, estarei aqui, pronto para fazer o que for correto — mesmo que isso me custe caro.
+                    
+                        Com respeito e consideração,
+                        <strong>Doutor Dias</strong>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -168,7 +223,20 @@ Ana Rosa é uma jovem que vive dividida entre o amor por Raimundo e os valores r
     </section>
     
     <div class="linha-degrade"></div>
+    
+    <section  id="sobre-colegio" class="sobre-colegio">
+        <div class="texto-sobre-colegio">
+            <h2>Sobre o Nosso Colégio</h2>
+            <p>A Universidade Tecnológica Federal do Paraná é uma universidade pública mantida pelo governo federal e sua sede está localizada na cidade de Curitiba, capital do estado brasileiro do Paraná. As bases da instituição decorrem do antigo Centro Federal de Educação Tecnológica do Paraná.</p>
+        </div>
+        <div class="imagem-colegio">
+            <img src="./img/campus.jpg" alt="Imagem do Colégio" class="imagem" id="imagem-colegio">
+            <div class="legenda" id="legenda-colegio">Este é o campus de Campo Mourão, onde os feitores desse trabalho estudam.</div>
+        </div>
+    </section>
+    
     </div>
+ 
     <script src="script.js"></script>
 </body>
 </html>
