@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth; /*rala mais bonitinho :)*/
+    scroll-behavior: smooth; /*rola mais bonitinho :)*/
 }
 
 :root {
@@ -49,7 +49,7 @@ body{
 .section {
     animation: fadeIn 1.5s ease-in-out;
 }
-@keyframes fadeIn { /*esse de tela menor nãpo testado*/
+@keyframes fadeIn { /*esse de tela menor não testado*/
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -122,7 +122,7 @@ h1, h2 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/*Barra de navegação*/
+/*Barra de navegação!!!*/
 .navbar {
     background-color: white;
     color: var(--biscotti);
@@ -153,7 +153,6 @@ h1, h2 {
     padding: 50px 20px;
     text-align: center;
     margin-top: 11px;
-
 }
 
 .section h1 {
@@ -228,7 +227,7 @@ h2{
     border-radius: 5px;
     flex-wrap: wrap;
     border: 5px solid #9f825b;
-    align-items: stretch /*deixa as img alinhada aparentemente*/
+    align-items: stretch /*deixa as img alinhada, aparentemente*/
     
 }
 .persotexto{
@@ -284,7 +283,7 @@ h2{
 }
 .autor-texto {
     flex: 1;
-    text-align: justify; /*Texto justificado*/
+    text-align: justify; /*texto justificado*/
     font-size: 1.1em;
     line-height: 1.6;
     color: #2c3e50;
@@ -436,16 +435,16 @@ h2{
     white-space: pre-line;
 }
 .folhacarta{
-    background-color: #f8f4e6; /* Cor do papel da carta */
-    border: 2px solid #d1b28a; /* Borda sutil, como um papel envelhecido */
-    border-radius: 15px; /* Bordas arredondadas */
-    padding: 20px; /* Espaçamento interno */
-    max-width: 600px; /* Tamanho máximo da carta */
-    margin: 20px auto; /* Centraliza a carta na página */
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
-    font-family: 'Georgia', serif; /* Fonte que imita escrita clássica */
-    font-size: 18px; /* Tamanho da fonte */
-    line-height: 1.6; /* Melhor legibilidade do texto */
+    background-color: #f8f4e6; /*cor da carta*/
+    border: 2px solid #d1b28a; 
+    border-radius: 15px; 
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1); 
+    font-family: 'Georgia', serif; 
+    font-size: 18px; 
+    line-height: 1.6; 
 }
 .sobre-colegio {
     display: flex;
@@ -489,7 +488,6 @@ h2{
 .imagem-colegio .imagem:hover {
     transform: scale(1.05); /* Aumenta um pouco a imagem ao passar o mouse */
 }
-
 .legenda {
     display: none;
     position: absolute;
