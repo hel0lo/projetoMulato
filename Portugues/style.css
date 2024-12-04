@@ -25,7 +25,6 @@ html {
     --ecru: #C9AD7E;
     --bistre: #2b2212;
     --almond: #ede0d4;
-
     /*green*/
     --verdungreen: #48521c;
     --smoke: #999f54; /*fumaça verde?*/
@@ -40,6 +39,7 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
 .container {
     max-width: 80%;
     margin: 0 auto;
@@ -261,13 +261,6 @@ h2{
     justify-content: space-around;
     border-bottom: 1px solid #d4d4d4;
     column-gap: 30px;   
-}
-.imgpersonagem {
-    width: 80%;
-    height: 250px;
-    background-color: var(--natbrow);
-    border-radius: 5px;
-    margin: 20px;
 }
 .nomeperso {
     padding: 10px 10px;
