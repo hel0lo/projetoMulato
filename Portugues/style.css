@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 html {
     scroll-behavior: smooth; /*rola mais bonitinho :)*/
 }
 
+  
 :root {
     --creme: #E7DED0;
     --latte: #d0bca0; /*leite (esquecikk)*/
@@ -480,7 +482,7 @@ h2 {
     font-size: 1.1em;
     color: #555;
     line-height: 1.6;
-}fil
+}
 .imagem-colegio {
     position: relative;
     width: 35%;
@@ -496,7 +498,7 @@ h2 {
 .imagem-colegio .imagem:hover {
     transform: scale(1.05); /* Aumenta um pouco a imagem ao passar o mouse */
 }
-.legenda {
+.legenda { /*PQQQ PQ NAO TA FUNCIONAAANDDOOOOO*/
     display: none;
     position: absolute;
     bottom: 10px;
@@ -508,8 +510,6 @@ h2 {
     font-size: 1em;
     max-width: 80%;
 }
-
-
-.imagem-colegio:hover .legenda {
+.imagem-colegio:hover, .legenda {
     display: block;
 }
