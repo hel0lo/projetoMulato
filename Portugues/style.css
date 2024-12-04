@@ -293,6 +293,7 @@ h2{
 .autor-imagem {
     flex: 0 0 250px;
     max-height: 350px;
+    margin-top: 19px;
 }
 .autor-imagem img { /*chat fez provavelmente nao funcioana :D*/
     width: 100%;
@@ -352,7 +353,7 @@ h2{
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .professora-imagem img {
     width: 150px;
@@ -362,6 +363,11 @@ h2{
     margin-left: 190px;
     margin-right: 30px;
 }
+h2 {
+    font-size: 20px;
+}
+
+
 .professora-texto {
     max-width: 600px;
 }
@@ -435,7 +441,6 @@ h2{
 }
 .texto-com-quebras {
     white-space: pre-line;
-
 }
 .folhacarta{
     background-color: #f8f4e6; /*cor da carta*/
@@ -447,7 +452,8 @@ h2{
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1); 
     font-family: 'Georgia', serif; 
     font-size: 13px; 
-    line-height: 1.6; 
+    line-height: 1.6;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.); 
 }
 .sobre-colegio {
     display: flex;
@@ -474,8 +480,7 @@ h2{
     font-size: 1.1em;
     color: #555;
     line-height: 1.6;
-}
-
+}fil
 .imagem-colegio {
     position: relative;
     width: 35%;
@@ -504,6 +509,7 @@ h2{
     max-width: 80%;
 }
 
+
 .imagem-colegio:hover .legenda {
-    display: block; /* Exibe a legenda ao passar o mouse sobre a imagem */
+    display: block;
 }
