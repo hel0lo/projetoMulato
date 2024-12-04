@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    user-select: none;
+    /*user-select: none;*/
 }
 html {
     scroll-behavior: smooth; /*rola mais bonitinho :)*/
@@ -497,6 +497,7 @@ h2 {
 
 .imagem-colegio .imagem:hover {
     transform: scale(1.05); /* Aumenta um pouco a imagem ao passar o mouse */
+    display: block;
 }
 .legenda { /*PQQQ PQ NAO TA FUNCIONAAANDDOOOOO*/
     display: none;
