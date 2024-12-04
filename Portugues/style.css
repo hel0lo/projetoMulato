@@ -421,7 +421,9 @@ h2{
     color: #333;
     margin-bottom: 10px;
 }
-
+.inicio p {
+    text-align: justify;
+}
 .aluno-texto {
     font-size: 14px;
     color: #555;
@@ -433,6 +435,7 @@ h2{
 }
 .texto-com-quebras {
     white-space: pre-line;
+
 }
 .folhacarta{
     background-color: #f8f4e6; /*cor da carta*/
@@ -443,7 +446,7 @@ h2{
     margin: 20px auto;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1); 
     font-family: 'Georgia', serif; 
-    font-size: 18px; 
+    font-size: 13px; 
     line-height: 1.6; 
 }
 .sobre-colegio {
